@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name "Adafruit BMP390")(type KiCad)(uri "$(KIPRJMOD)/Adafruit BMP390.pretty")(options "")(descr ""))
+)

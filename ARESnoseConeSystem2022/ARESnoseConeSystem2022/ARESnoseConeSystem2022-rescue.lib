@@ -1,0 +1,18 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# 5V-ARESnoseConeSystem2022-eagle-import
+#
+DEF 5V-ARESnoseConeSystem2022-eagle-import #SUPPLY 0 40 Y Y 1 L P
+F0 "#SUPPLY" 0 0 50 H I C CNN
+F1 "5V-ARESnoseConeSystem2022-eagle-import" 0 110 59 H V C BNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 1 0 0 0 100 -30 50 N
+P 2 1 0 0 30 50 0 100 N
+X 5V 1 0 0 100 U 0 0 1 0 W
+ENDDRAW
+ENDDEF
+#
+#End Library

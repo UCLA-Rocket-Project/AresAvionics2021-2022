@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name "SparkFun NEO-M8U")(type KiCad)(uri "$(KIPRJMOD)/SparkFun NEO-M8U.pretty")(options "")(descr ""))
+)

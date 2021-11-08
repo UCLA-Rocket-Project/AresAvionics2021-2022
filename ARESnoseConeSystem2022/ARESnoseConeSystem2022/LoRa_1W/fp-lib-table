@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name LoRa_1W_Breakout)(type KiCad)(uri "$(KIPRJMOD)/LoRa_1W_Breakout.pretty")(options "")(descr ""))
+)

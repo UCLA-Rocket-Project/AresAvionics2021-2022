@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name SparkFun_IMU_Breakout_ICM-20948-eagle-import)(type Legacy)(uri ${KIPRJMOD}/SparkFun_IMU_Breakout_ICM-20948-eagle-import.lib)(options "")(descr ""))
+)
