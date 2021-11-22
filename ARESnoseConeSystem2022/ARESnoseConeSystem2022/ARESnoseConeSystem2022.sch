@@ -678,4 +678,6 @@ Wire Wire Line
 	1100 850  1450 850 
 Connection ~ 1450 850 
 Connection ~ 3950 1750
+Text Notes 6550 1000 0    50   ~ 0
+For questions & comments:\nEric Broman\nerictbroman@gmail.com\n
 $EndSCHEMATC
