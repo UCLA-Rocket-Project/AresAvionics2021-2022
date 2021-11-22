@@ -327,7 +327,7 @@ F 3 "~" H 6900 6700 50  0001 C CNN
 $EndComp
 Text Label 6700 7000 2    50   ~ 0
 Transmitter_RST
-Text Label 8400 3400 0    50   ~ 0
+Text Label 8400 3500 0    50   ~ 0
 Transmitter_RST
 Text Label 6200 3500 2    50   ~ 0
 GPS_PPS
@@ -680,4 +680,12 @@ Connection ~ 1450 850
 Connection ~ 3950 1750
 Text Notes 6550 1000 0    50   ~ 0
 For questions & comments:\nEric Broman\nerictbroman@gmail.com\n
+Text Label 8400 3400 0    50   ~ 0
+RXEN
+Text Label 8400 3300 0    50   ~ 0
+TXEN
+Text Label 5150 6300 0    50   ~ 0
+RXEN
+Text Label 5150 6400 0    50   ~ 0
+TXEN
 $EndSCHEMATC
