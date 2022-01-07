@@ -1,0 +1,11 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP BA05CC0WFP-E2
+F https://fscdn.rohm.com/en/products/databook/datasheet/ic/power/linear_regulator/baxxdd0-e.pdf
+$ENDCMP
+#
+$CMP RN5RF50BA-TR-FE
+F https://www.nisshinbo-microdevices.co.jp/en/pdf/datasheet/rn5rf-ea.pdf
+$ENDCMP
+#
+#End Doc Library

@@ -25,17 +25,6 @@ F 3 "" H 6900 4350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 2021-10-26_01-52-08:436500200 J2
-U 1 1 6179FE90
-P 1100 950
-F 0 "J2" H 1342 563 60  0000 C CNN
-F 1 "436500200" H 1342 669 60  0000 C CNN
-F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43650-0200_1x02_P3.00mm_Horizontal" H 1500 890 60  0001 C CNN
-F 3 "" H 1100 950 60  0000 C CNN
-	1    1100 950 
-	-1   0    0    1   
-$EndComp
-$Comp
 L Device:C_Small C2
 U 1 1 617A460B
 P 1750 1100
@@ -47,25 +36,14 @@ F 3 "~" H 1750 1100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C3
-U 1 1 617A5197
-P 4800 950
-F 0 "C3" H 4892 996 50  0000 L CNN
-F 1 "2.2 uF" H 4892 905 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 4800 950 50  0001 C CNN
-F 3 "~" H 4800 950 50  0001 C CNN
-	1    4800 950 
-	1    0    0    -1  
-$EndComp
-$Comp
 L ARESnoseConeSystem2022-rescue:5V-ARESnoseConeSystem2022-eagle-import #SUPPLY0101
 U 1 1 617A6ADA
-P 5150 800
-F 0 "#SUPPLY0101" H 5150 800 50  0001 C CNN
-F 1 "5V" H 5150 1022 59  0000 C CNN
-F 2 "" H 5150 800 50  0001 C CNN
-F 3 "" H 5150 800 50  0001 C CNN
-	1    5150 800 
+P 5000 800
+F 0 "#SUPPLY0101" H 5000 800 50  0001 C CNN
+F 1 "5V" H 5000 1022 59  0000 C CNN
+F 2 "" H 5000 800 50  0001 C CNN
+F 3 "" H 5000 800 50  0001 C CNN
+	1    5000 800 
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -90,8 +68,6 @@ F 3 "" H 3600 1750 60  0000 C CNN
 	1    3600 1750
 	-1   0    0    1   
 $EndComp
-Text Notes 450  1150 0    50   ~ 0
-Power Input 7.4V LiPo
 Text Notes 3000 1950 0    50   ~ 0
 Power Switch
 $Comp
@@ -161,17 +137,6 @@ F 1 "GND" H 2155 1227 50  0000 C CNN
 F 2 "" H 2150 1400 50  0001 C CNN
 F 3 "" H 2150 1400 50  0001 C CNN
 	1    2150 1400
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0102
-U 1 1 6183F6F2
-P 1350 1300
-F 0 "#PWR0102" H 1350 1050 50  0001 C CNN
-F 1 "GND" H 1355 1127 50  0000 C CNN
-F 2 "" H 1350 1300 50  0001 C CNN
-F 3 "" H 1350 1300 50  0001 C CNN
-	1    1350 1300
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -528,17 +493,6 @@ Text Notes 6750 5900 0    50   ~ 0
 LoRa Transmitter
 Text Notes 4600 7600 0    50   ~ 0
 R1 is to provide 3.3V power.\nMixed instructions if it can be left floating
-$Comp
-L 5V-Reg:AP2210K-ADJTRG1 U1
-U 1 1 6189FD96
-P 2150 850
-F 0 "U1" H 3050 1237 60  0000 C CNN
-F 1 "AP2210K-ADJTRG1" H 3050 1131 60  0000 C CNN
-F 2 "footprints:AP2210K-ADJTRG1" H 3050 1090 60  0001 C CNN
-F 3 "" H 2150 850 60  0000 C CNN
-	1    2150 850 
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1750 850  1750 1000
 Connection ~ 1750 850 
@@ -551,19 +505,8 @@ Wire Wire Line
 Wire Wire Line
 	2150 1200 2150 950 
 Connection ~ 2150 1200
-$Comp
-L power:GND #PWR03
-U 1 1 618B8BF2
-P 4650 1650
-F 0 "#PWR03" H 4650 1400 50  0001 C CNN
-F 1 "GND" H 4655 1477 50  0000 C CNN
-F 2 "" H 4650 1650 50  0001 C CNN
-F 3 "" H 4650 1650 50  0001 C CNN
-	1    4650 1650
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	5150 850  5150 800 
+	5000 850  5000 800 
 $Comp
 L power:+BATT #PWR02
 U 1 1 618C79CD
@@ -591,14 +534,12 @@ $EndComp
 Wire Wire Line
 	3600 1650 3750 1650
 Wire Wire Line
-	3950 1050 3950 1750
-Wire Wire Line
 	3950 1750 3600 1750
 $Comp
-L Device:R_US R4
+L Device:R_US R2
 U 1 1 618D4FFE
 P 3950 1900
-F 0 "R4" H 3800 1950 50  0000 C CNN
+F 0 "R2" H 3800 1950 50  0000 C CNN
 F 1 "10 kOhm" H 3750 1850 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3990 1890 50  0001 C CNN
 F 3 "~" H 3950 1900 50  0001 C CNN
@@ -616,64 +557,6 @@ F 3 "" H 3950 2050 50  0001 C CNN
 	1    3950 2050
 	1    0    0    -1  
 $EndComp
-Text Notes 3700 700  0    50   ~ 0
-VOUT = 1.25V*(1+R3/R2)
-Connection ~ 4800 850 
-Wire Wire Line
-	4800 850  5150 850 
-$Comp
-L Device:R_US R3
-U 1 1 618DF2CA
-P 4550 1450
-F 0 "R3" H 4400 1500 50  0000 C CNN
-F 1 "9,1 kOhm" H 4300 1400 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4590 1440 50  0001 C CNN
-F 3 "~" H 4550 1450 50  0001 C CNN
-	1    4550 1450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_US R2
-U 1 1 618E25C7
-P 4550 1050
-F 0 "R2" H 4400 1100 50  0000 C CNN
-F 1 "3 kOhm" H 4350 1000 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4590 1040 50  0001 C CNN
-F 3 "~" H 4550 1050 50  0001 C CNN
-	1    4550 1050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3950 850  4550 850 
-Wire Wire Line
-	4550 850  4550 900 
-Connection ~ 4550 850 
-Wire Wire Line
-	4550 850  4800 850 
-Wire Wire Line
-	4800 1050 4800 1600
-Wire Wire Line
-	4550 1300 4550 1250
-Wire Wire Line
-	3950 950  4150 950 
-Wire Wire Line
-	4150 950  4150 1250
-Wire Wire Line
-	4150 1250 4550 1250
-Connection ~ 4550 1250
-Wire Wire Line
-	4550 1250 4550 1200
-Wire Wire Line
-	4550 1600 4650 1600
-Wire Wire Line
-	4650 1650 4650 1600
-Connection ~ 4650 1600
-Wire Wire Line
-	4650 1600 4800 1600
-Wire Wire Line
-	1100 950  1350 950 
-Wire Wire Line
-	1350 950  1350 1300
 Wire Wire Line
 	1100 850  1450 850 
 Connection ~ 1450 850 
@@ -688,4 +571,74 @@ Text Label 5150 6300 0    50   ~ 0
 RXEN
 Text Label 5150 6400 0    50   ~ 0
 TXEN
+$Comp
+L 2021-10-26_01-52-08:436500200 J2
+U 1 1 6179FE90
+P 1100 950
+F 0 "J2" H 1342 563 60  0000 C CNN
+F 1 "436500200" H 1342 669 60  0000 C CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43650-0200_1x02_P3.00mm_Horizontal" H 1500 890 60  0001 C CNN
+F 3 "" H 1100 950 60  0000 C CNN
+	1    1100 950 
+	-1   0    0    1   
+$EndComp
+Connection ~ 4400 850 
+Wire Wire Line
+	3950 850  4400 850 
+Wire Wire Line
+	4400 850  5000 850 
+Wire Wire Line
+	4400 1050 4400 1250
+$Comp
+L power:GND #PWR03
+U 1 1 618B8BF2
+P 4400 1250
+F 0 "#PWR03" H 4400 1000 50  0001 C CNN
+F 1 "GND" H 4405 1077 50  0000 C CNN
+F 2 "" H 4400 1250 50  0001 C CNN
+F 3 "" H 4400 1250 50  0001 C CNN
+	1    4400 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C3
+U 1 1 617A5197
+P 4400 950
+F 0 "C3" H 4492 996 50  0000 L CNN
+F 1 "2.2 uF" H 4492 905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4400 950 50  0001 C CNN
+F 3 "~" H 4400 950 50  0001 C CNN
+	1    4400 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 6183F6F2
+P 1350 1300
+F 0 "#PWR0102" H 1350 1050 50  0001 C CNN
+F 1 "GND" H 1355 1127 50  0000 C CNN
+F 2 "" H 1350 1300 50  0001 C CNN
+F 3 "" H 1350 1300 50  0001 C CNN
+	1    1350 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 950  1350 950 
+Wire Wire Line
+	1350 950  1350 1300
+Text Notes 450  1150 0    50   ~ 0
+Power Input 7.4V LiPo
+$Comp
+L 5V-Reg:BA05CC0WFP-E2 U1
+U 1 1 61D9195C
+P 3100 600
+F 0 "U1" H 3050 665 50  0000 C CNN
+F 1 "BA05CC0WFP-E2" H 3050 574 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TO-252-5_TabPin3" H 3100 550 50  0001 C CNN
+F 3 "https://fscdn.rohm.com/en/products/databook/datasheet/ic/power/linear_regulator/baxxdd0-e.pdf" H 3100 550 50  0001 C CNN
+	1    3100 600 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 950  3950 1750
 $EndSCHEMATC
