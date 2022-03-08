@@ -27,12 +27,12 @@ $EndComp
 $Comp
 L Device:C_Small C2
 U 1 1 617A460B
-P 1750 1100
-F 0 "C2" H 1842 1146 50  0000 L CNN
-F 1 "10 uF" H 1842 1055 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1750 1100 50  0001 C CNN
-F 3 "~" H 1750 1100 50  0001 C CNN
-	1    1750 1100
+P 1800 1350
+F 0 "C2" H 1892 1396 50  0000 L CNN
+F 1 "10 uF" H 1892 1305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1800 1350 50  0001 C CNN
+F 3 "~" H 1800 1350 50  0001 C CNN
+	1    1800 1350
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -131,12 +131,12 @@ SCK
 $Comp
 L power:GND #PWR0101
 U 1 1 6183E6B9
-P 2150 1400
-F 0 "#PWR0101" H 2150 1150 50  0001 C CNN
-F 1 "GND" H 2155 1227 50  0000 C CNN
-F 2 "" H 2150 1400 50  0001 C CNN
-F 3 "" H 2150 1400 50  0001 C CNN
-	1    2150 1400
+P 2150 1550
+F 0 "#PWR0101" H 2150 1300 50  0001 C CNN
+F 1 "GND" H 2155 1377 50  0000 C CNN
+F 2 "" H 2150 1550 50  0001 C CNN
+F 3 "" H 2150 1550 50  0001 C CNN
+	1    2150 1550
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -235,18 +235,16 @@ SCK
 $Comp
 L power:GND #PWR0107
 U 1 1 61867FAF
-P 5750 7150
-F 0 "#PWR0107" H 5750 6900 50  0001 C CNN
-F 1 "GND" H 5755 6977 50  0000 C CNN
-F 2 "" H 5750 7150 50  0001 C CNN
-F 3 "" H 5750 7150 50  0001 C CNN
-	1    5750 7150
+P 5350 7150
+F 0 "#PWR0107" H 5350 6900 50  0001 C CNN
+F 1 "GND" H 5355 6977 50  0000 C CNN
+F 2 "" H 5350 7150 50  0001 C CNN
+F 3 "" H 5350 7150 50  0001 C CNN
+	1    5350 7150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5750 7100 5750 7150
-Wire Wire Line
-	5150 7100 5750 7100
+	5350 7100 5350 7150
 $Comp
 L ARESnoseConeSystem2022-rescue:5V-ARESnoseConeSystem2022-eagle-import #SUPPLY0103
 U 1 1 61868B00
@@ -258,23 +256,6 @@ F 3 "" H 5750 7000 50  0001 C CNN
 	1    5750 7000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5150 7000 5750 7000
-$Comp
-L Device:R_US R1
-U 1 1 61878C58
-P 6100 6650
-F 0 "R1" V 5895 6650 50  0000 C CNN
-F 1 "0 Ohm" V 5986 6650 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6140 6640 50  0001 C CNN
-F 3 "~" H 6100 6650 50  0001 C CNN
-	1    6100 6650
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	6400 6650 6250 6650
-Wire Wire Line
-	5950 6650 5500 6650
 Wire Wire Line
 	5500 6650 5500 6900
 Wire Wire Line
@@ -292,7 +273,7 @@ F 3 "~" H 6900 6700 50  0001 C CNN
 $EndComp
 Text Label 6700 7000 2    50   ~ 0
 Transmitter_RST
-Text Label 8400 3500 0    50   ~ 0
+Text Label 8400 4100 0    50   ~ 0
 Transmitter_RST
 Text Label 6200 3500 2    50   ~ 0
 GPS_PPS
@@ -301,12 +282,12 @@ GPS_RST
 $Comp
 L power:+3.3V #PWR01
 U 1 1 618979DC
-P 6400 6650
-F 0 "#PWR01" H 6400 6500 50  0001 C CNN
-F 1 "+3.3V" H 6415 6823 50  0000 C CNN
-F 2 "" H 6400 6650 50  0001 C CNN
-F 3 "" H 6400 6650 50  0001 C CNN
-	1    6400 6650
+P 6200 6650
+F 0 "#PWR01" H 6200 6500 50  0001 C CNN
+F 1 "+3.3V" H 6215 6823 50  0000 C CNN
+F 2 "" H 6200 6650 50  0001 C CNN
+F 3 "" H 6200 6650 50  0001 C CNN
+	1    6200 6650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -476,11 +457,7 @@ Wire Notes Line
 Wire Notes Line
 	1950 7400 1950 5800
 Wire Notes Line
-	4550 5800 4550 7400
-Wire Notes Line
-	4550 7400 7450 7400
-Wire Notes Line
-	7450 7400 7450 5800
+	4550 7450 7450 7450
 Wire Notes Line
 	7450 5800 4550 5800
 Text Notes 3650 2900 0    50   ~ 0
@@ -491,20 +468,8 @@ Text Notes 4150 5900 0    50   ~ 0
 GPS
 Text Notes 6750 5900 0    50   ~ 0
 LoRa Transmitter
-Text Notes 4600 7600 0    50   ~ 0
-R1 is to provide 3.3V power.\nMixed instructions if it can be left floating
-Wire Wire Line
-	1750 850  1750 1000
-Connection ~ 1750 850 
-Wire Wire Line
-	1750 850  2150 850 
-Wire Wire Line
-	1750 1200 2150 1200
-Wire Wire Line
-	2150 1200 2150 1400
-Wire Wire Line
-	2150 1200 2150 950 
-Connection ~ 2150 1200
+Text Notes 4600 7550 0    50   ~ 0
+5V is for power. 3.3V provides pull ups for RST and CS
 Wire Wire Line
 	5000 850  5000 800 
 $Comp
@@ -518,8 +483,6 @@ F 3 "" H 1450 850 50  0001 C CNN
 	1    1450 850 
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1450 850  1750 850 
 $Comp
 L power:+BATT #PWR04
 U 1 1 618C93F2
@@ -557,9 +520,6 @@ F 3 "" H 3950 2050 50  0001 C CNN
 	1    3950 2050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1100 850  1450 850 
-Connection ~ 1450 850 
 Connection ~ 3950 1750
 Text Notes 6550 1000 0    50   ~ 0
 For questions & comments:\nEric Broman\nerictbroman@gmail.com\n
@@ -574,12 +534,12 @@ TXEN
 $Comp
 L 2021-10-26_01-52-08:436500200 J2
 U 1 1 6179FE90
-P 1100 950
-F 0 "J2" H 1342 563 60  0000 C CNN
-F 1 "436500200" H 1342 669 60  0000 C CNN
-F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43650-0200_1x02_P3.00mm_Horizontal" H 1500 890 60  0001 C CNN
-F 3 "" H 1100 950 60  0000 C CNN
-	1    1100 950 
+P 850 950
+F 0 "J2" H 1092 563 60  0000 C CNN
+F 1 "436500200" H 1092 669 60  0000 C CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43650-0200_1x02_P3.00mm_Horizontal" H 1250 890 60  0001 C CNN
+F 3 "" H 850 950 60  0000 C CNN
+	1    850  950 
 	-1   0    0    1   
 $EndComp
 Connection ~ 4400 850 
@@ -623,10 +583,8 @@ F 3 "" H 1350 1300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1100 950  1350 950 
-Wire Wire Line
-	1350 950  1350 1300
-Text Notes 450  1150 0    50   ~ 0
+	1350 950  1350 1250
+Text Notes 150  1150 0    50   ~ 0
 Power Input 7.4V LiPo
 $Comp
 L 5V-Reg:BA05CC0WFP-E2 U1
@@ -641,4 +599,148 @@ F 3 "https://fscdn.rohm.com/en/products/databook/datasheet/ic/power/linear_regul
 $EndComp
 Wire Wire Line
 	3950 950  3950 1750
+$Comp
+L power:GND #PWR0111
+U 1 1 6202FF50
+P 6700 7150
+F 0 "#PWR0111" H 6700 6900 50  0001 C CNN
+F 1 "GND" H 6705 6977 50  0000 C CNN
+F 2 "" H 6700 7150 50  0001 C CNN
+F 3 "" H 6700 7150 50  0001 C CNN
+	1    6700 7150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 7100 6700 7150
+$Comp
+L power:GND #PWR0112
+U 1 1 62031060
+P 6100 6100
+F 0 "#PWR0112" H 6100 5850 50  0001 C CNN
+F 1 "GND" H 6105 5927 50  0000 C CNN
+F 2 "" H 6100 6100 50  0001 C CNN
+F 3 "" H 6100 6100 50  0001 C CNN
+	1    6100 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 6050 6100 6100
+Wire Wire Line
+	6700 6300 6300 6300
+Wire Wire Line
+	6300 6300 6300 6050
+Wire Wire Line
+	6300 6050 6100 6050
+Text Label 6700 6900 2    50   ~ 0
+T_D0
+Text Label 6700 6800 2    50   ~ 0
+T_D1
+Text Label 6700 6700 2    50   ~ 0
+T_D2
+Text Label 6700 6600 2    50   ~ 0
+T_D3
+Text Label 6700 6500 2    50   ~ 0
+T_D4
+Text Label 6700 6400 2    50   ~ 0
+T_D5
+Text Label 8400 4000 0    50   ~ 0
+T_D0
+Text Label 8400 3900 0    50   ~ 0
+T_D1
+Text Label 8400 3800 0    50   ~ 0
+T_D2
+Text Label 8400 3700 0    50   ~ 0
+T_D3
+Text Label 8400 3600 0    50   ~ 0
+T_D4
+Text Label 8400 3500 0    50   ~ 0
+T_D5
+Wire Wire Line
+	5350 7100 5150 7100
+$Comp
+L Device:C_Small C4
+U 1 1 62073826
+P 5600 7100
+F 0 "C4" H 5692 7146 50  0000 L CNN
+F 1 "10 uF" H 5692 7055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5600 7100 50  0001 C CNN
+F 3 "~" H 5600 7100 50  0001 C CNN
+	1    5600 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR010
+U 1 1 62074974
+P 5600 7200
+F 0 "#PWR010" H 5600 6950 50  0001 C CNN
+F 1 "GND" H 5605 7027 50  0000 C CNN
+F 2 "" H 5600 7200 50  0001 C CNN
+F 3 "" H 5600 7200 50  0001 C CNN
+	1    5600 7200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 6650 6200 6650
+Wire Notes Line
+	4550 5800 4550 7450
+Wire Notes Line
+	7450 5800 7450 7450
+Wire Wire Line
+	5150 7000 5600 7000
+Connection ~ 5600 7000
+Wire Wire Line
+	5600 7000 5750 7000
+$Comp
+L Simulation_SPICE:DIODE D1
+U 1 1 620A0FB6
+P 1500 1250
+F 0 "D1" H 1500 1467 50  0000 C CNN
+F 1 "DIODE" H 1500 1376 50  0000 C CNN
+F 2 "Diode_SMD:D_0805_2012Metric" H 1500 1250 50  0001 C CNN
+F 3 "~" H 1500 1250 50  0001 C CNN
+F 4 "Y" H 1500 1250 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "D" H 1500 1250 50  0001 L CNN "Spice_Primitive"
+	1    1500 1250
+	1    0    0    -1  
+$EndComp
+Connection ~ 1350 1250
+Wire Wire Line
+	1350 1250 1350 1300
+Wire Wire Line
+	1450 850  1800 850 
+Wire Wire Line
+	1800 1450 2150 1450
+Wire Wire Line
+	2150 950  2150 1450
+Wire Wire Line
+	2150 1550 2150 1450
+Connection ~ 2150 1450
+Wire Wire Line
+	1650 1250 1800 1250
+Wire Wire Line
+	1800 1250 1800 850 
+Connection ~ 1800 1250
+Connection ~ 1800 850 
+Wire Wire Line
+	1800 850  2150 850 
+$Comp
+L Simulation_SPICE:DIODE D2
+U 1 1 620B49DB
+P 1150 850
+F 0 "D2" H 1150 1067 50  0000 C CNN
+F 1 "DIODE" H 1150 976 50  0000 C CNN
+F 2 "Diode_SMD:D_0805_2012Metric" H 1150 850 50  0001 C CNN
+F 3 "~" H 1150 850 50  0001 C CNN
+F 4 "Y" H 1150 850 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "D" H 1150 850 50  0001 L CNN "Spice_Primitive"
+	1    1150 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	850  850  1000 850 
+Wire Wire Line
+	1300 850  1450 850 
+Connection ~ 1450 850 
+Wire Wire Line
+	850  950  1350 950 
 $EndSCHEMATC
